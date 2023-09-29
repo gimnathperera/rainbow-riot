@@ -2,7 +2,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="footer footer-center p-4 text-base-content">
+    <footer className="footer footer-center p-4 text-base-content pt-12">
       <aside>
         <p>Made with 💖 by Gimnath</p>
       </aside>

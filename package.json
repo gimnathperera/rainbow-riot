@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "colorthief": "^2.4.0",
+    "extract-colors": "^4.0.2",
     "next": "latest",
     "react": "latest",
     "react-animated-cursor": "^2.10.1",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
     "@types/node": "latest",
