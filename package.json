@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "pnpm check-format && pnpm check-lint && pnpm check-types && pnpm build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "colorthief": "^2.4.0",
@@ -21,12 +27,18 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
     "autoprefixer": "latest",
     "daisyui": "^3.8.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.2",
     "postcss": "latest",
+    "prettier": "^3.0.3",
     "tailwindcss": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "husky": "^8.0.0"
   }
 }
