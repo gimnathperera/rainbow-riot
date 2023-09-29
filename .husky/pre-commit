@@ -26,7 +26,8 @@ pnpm check-types ||
           Please resolve the indicated problems before proceeding.'
     false;
 )
-# If all checks pass, proceed to build
+
+
 echo '👍 No linting or type issues found...'
 
 
