@@ -16,11 +16,12 @@ const Home: FC = () => {
   return (
     <section>
       <Hero />
-
-      <div className='hero-content text-center'>
-        <div className='max-w-2xl'>
-          <Uploader onImageSelect={onImageSelect} />
-          <ColorList colorPalette={colorPalette} />
+      <div className='hero lg:pt-18 pt-12'>
+        <div className='hero-content text-center'>
+          <div className='max-w-2xl'>
+            <Uploader onImageSelect={onImageSelect} />
+            <ColorList colorPalette={colorPalette} />
+          </div>
         </div>
       </div>
 
