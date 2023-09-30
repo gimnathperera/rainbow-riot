@@ -1,7 +1,7 @@
 'use client';
 import { HeroColors } from '@/constants';
 import { useState, useEffect, FC } from 'react';
-// import AnimatedCursor from "react-animated-cursor";
+import AnimatedCursor from 'react-animated-cursor';
 
 const Hero: FC = () => {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -38,7 +38,7 @@ const Hero: FC = () => {
           </p>
         </div>
       </div>
-      {/* <AnimatedCursor /> */}
+      <AnimatedCursor />
     </div>
   );
 };

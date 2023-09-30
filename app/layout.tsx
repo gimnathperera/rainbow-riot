@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
+import { FC } from 'react';
 import { Inter } from 'next/font/google';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { siteConfig } from '@/config/site';
 import '@/styles/globals.css';
-import { FC } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 

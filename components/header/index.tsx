@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import GithubIcon from '../icons/github';
+import { siteConfig } from '@/config/site';
 
 type Props = {};
 
@@ -12,11 +13,13 @@ const Header: FC<Props> = ({}) => {
         </div>
       </div>
       <div className='flex-none'>
-        <label className='btn btn-ghost btn-circle'>
-          <div className='indicator'>
-            <GithubIcon />
-          </div>
-        </label>
+        <a href={siteConfig.links.repository}>
+          <label className='btn btn-ghost btn-circle'>
+            <div className='indicator'>
+              <GithubIcon />
+            </div>
+          </label>
+        </a>
       </div>
     </div>
   );
