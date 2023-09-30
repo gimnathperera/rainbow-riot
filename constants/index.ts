@@ -1,11 +1,11 @@
 export const HeroColors = [
-  '#FF5117',
-  '#FF8E00',
-  '#F9D81E',
-  '#97CC37',
-  '#8177FA',
-  '#00C0E9',
-  '#C902E6',
+  '#FFFFE0',
+  '#F5F5F5',
+  '#FFFFFF',
+  '#98FB98',
+  '#FFDAB9',
+  '#FFF5E1',
+  '#E6E6FA',
 ];
 
 export const MaxPaletteSize = 5;
