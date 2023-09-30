@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/your-project-name/blob/main/LICENSE) [![Next.js Version](https://img.shields.io/badge/Next.js-13.4.0-blueviolet.svg)](https://nextjs.org/) [![TypeScript Version](https://img.shields.io/badge/TypeScript-4.5.2-blue.svg)](https://www.typescriptlang.org/)
 
-<!-- <img width="1431" alt="image" src="/resources/screen-capture.gif"> -->
+<img width="1431" alt="image" src="/resources/demo.gif">
 
 ## Table of Contents
 
