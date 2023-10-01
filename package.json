@@ -12,16 +12,21 @@
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "prettier --write .",
     "test-all": "pnpm check-format && pnpm check-lint && pnpm check-types && pnpm build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "release-it"
   },
   "dependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@release-it/conventional-changelog": "^7.0.2",
     "colorthief": "^2.4.0",
     "extract-colors": "^4.0.2",
     "next": "latest",
     "react": "latest",
     "react-animated-cursor": "^2.10.1",
     "react-dom": "latest",
-    "react-hot-toast": "^2.4.1"
+    "react-hot-toast": "^2.4.1",
+    "release-it": "^16.2.1"
   },
   "devDependencies": {
     "@types/node": "latest",
@@ -35,10 +40,40 @@
     "eslint-config-next": "latest",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.0",
     "postcss": "latest",
     "prettier": "^3.0.3",
     "tailwindcss": "latest",
-    "typescript": "latest",
-    "husky": "^8.0.0"
+    "typescript": "latest"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {}
+          ]
+        }
+      }
+    }
   }
 }
