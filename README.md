@@ -59,6 +59,6 @@ We welcome contributions from the community! To contribute to this project, plea
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the ![License](https://img.shields.io/badge/license-MIT-blue.svg) - see the LICENSE file for details.
 
 _Made with ❤️ by [Gimnath Perera](https://github.com/Gimnath-Perera)_
